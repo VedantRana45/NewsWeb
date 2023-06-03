@@ -1,0 +1,9 @@
+.home-container {
+  width: 100%;
+}
+.newsCardContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

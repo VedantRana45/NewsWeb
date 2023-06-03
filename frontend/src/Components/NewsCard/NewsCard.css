@@ -1,0 +1,19 @@
+.main-newsCard {
+  width: 90%;
+  display: flex;
+  border: 1px solid red;
+}
+
+.left-div {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+.left-div > img {
+  width: 100%;
+}
+.right-div {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
