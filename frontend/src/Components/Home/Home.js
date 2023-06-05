@@ -37,7 +37,6 @@ const Home = () => {
 
     return (
         <div className='home-container'>
-            {/* <p>{date.toUTCString().slice(0, 16)}</p> */}
             <p>{`${days[date.getUTCDay()]}, ${date.getDate()} ${months[date.getMonth()]} `}</p>
             <div className="newsCardContainer">
                 {
@@ -46,10 +45,11 @@ const Home = () => {
                     ))
                 }
             </div>
-
-            <button onClick={() => changePage(-1)}>{page === 1 ? 'X' : page - 1}</button>
-            <span>{page}</span>
-            <button onClick={() => changePage(1)}>{page === 9 ? 'X' : page + 1}</button>
+            <div className="btn-div">
+                <button onClick={() => changePage(-1)}>{page === 1 ? 'X' : '<'}</button>
+                <span>{page}</span>
+                <button onClick={() => changePage(1)}>{page === 9 ? 'X' : '>'}</button>
+            </div>
         </div>
     )
 }

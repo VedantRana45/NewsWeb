@@ -12,10 +12,15 @@ function App() {
     <>
       <BrowserRouter>
         <NewsContextProvider>
-          <div className="container main-container">
-            <Navbar />
-            <FieldBar />
-            <Home />
+          <div className="main-body-container">
+
+            <div className="navBarContainer">
+              <Navbar />
+              <FieldBar />
+            </div>
+            <div className={window.innerWidth > 481 ? 'container main-container' : 'main-container'}>
+              <Home />
+            </div>
           </div>
         </NewsContextProvider>
       </BrowserRouter>

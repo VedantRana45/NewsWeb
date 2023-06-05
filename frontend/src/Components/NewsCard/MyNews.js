@@ -1,3 +1,4 @@
+import dummyImg from '../../Images/dummyImg.jpg';
 export const News = [
     {
         "source": {
@@ -21,7 +22,7 @@ export const News = [
         "title": "Coal India OFS: Non-retail portion over-subscribed; govt to exercise green shoe option | Mint - Mint",
         "description": "Government's offer-for-sale for up to 3% stake in Coal India oversubscribed by non-retail investors with bids for 345.72% of the offer size reserved for them.",
         "url": "https://www.livemint.com/market/stock-market-news/coal-india-ofs-non-retail-portion-over-subscribed-govt-to-exercise-green-shoe-option-11685617507405.html",
-        "urlToImage": "https://www.livemint.com/lm-img/img/2023/06/01/600x338/2-0-480064353-coal-India-0_1680769469972_1685617965961.JPG",
+        "urlToImage": dummyImg,
         "publishedAt": "2023-06-01T11:21:06Z",
         "content": "The government's offer-for-sale (OFS) for up to 3% stake in Coal India got over-subscribed by non-retail investors on Thursday. As against 8.31 crore shares of offer, investors have put in bids for 2… [+1628 chars]"
     },
@@ -47,7 +48,7 @@ export const News = [
         "title": "Franco Mulakkal resigns as Jalandhar Bishop | Manorama English - Onmanorama",
         "description": "Vatican clarified Mulakkal's resignation was requested as 'pro bono Ecclesiae' especially for the good of the diocese which needs a new bishop.",
         "url": "https://www.onmanorama.com/news/kerala/2023/06/01/bishop-franco-mulakkal-jalandhar-resigns.html",
-        "urlToImage": "https://img.onmanorama.com/content/dam/mm/en/kerala/top-news/images/2022/1/21/franco-mulakkal.jpg",
+        "urlToImage": dummyImg,
         "publishedAt": "2023-06-01T11:09:04Z",
         "content": "Thiruvananthapuram: Franco Mulakkal, who was booked in a case involving the alleged rape of a nun back in 2018, has resigned as the Jalandhar bishop. He confirmed that pope Francis has accepted his r… [+1801 chars]"
     },

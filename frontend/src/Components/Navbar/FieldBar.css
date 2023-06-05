@@ -1,0 +1,48 @@
+.field-bar {
+  display: flex;
+  width: 65vw;
+  justify-content: center;
+}
+.navbar-expand-lg {
+  width: 100%;
+}
+.field-bar-list li {
+  margin: 0 3%;
+  font-size: 1vmax;
+  cursor: pointer;
+}
+
+.field-bar-list li p {
+  margin-bottom: 0;
+  padding: 5% 1%;
+  color: var(--color3);
+}
+
+@media only screen and (max-width: 480px) {
+  .field-bar {
+    width: 100%;
+  }
+  .field-bar > nav > div {
+    padding: 15% 0 1% 0;
+    position: relative;
+    width: 120%;
+    margin: 0;
+    height: auto;
+  }
+
+  .field-bar > nav > div > p {
+    display: none;
+  }
+  .field-bar > nav > div > button {
+    font-size: 2vmax;
+    background-color: var(--color4);
+    position: absolute;
+    right: 1%;
+    top: 1vmax;
+  }
+  .field-bar-list li > p {
+    padding: 1% 2%;
+    margin: 1% 0;
+    font-size: 1.8vmax;
+  }
+}

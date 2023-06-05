@@ -1,9 +1,58 @@
 .home-container {
   width: 100%;
 }
+.home-container > p {
+  text-align: center;
+  margin: 3% 0 1% 0;
+  font-size: 1.3vmax;
+  font-weight: 500;
+}
 .newsCardContainer {
   display: flex;
+  width: 100%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 0 5%;
+}
+
+.btn-div {
+  width: 30vw;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-div > button,
+.btn-div > span {
+  padding: 1% 7%;
+  margin: 5% 0;
+  border: none;
+  font-size: 1vmax;
+  font-weight: 500;
+}
+.btn-div > button {
+  border-radius: 0.5vmax;
+  background-color: var(--color2);
+  color: var(--color3);
+}
+
+@media only screen and (max-width: 480px) {
+  .home-container > p {
+    font-size: 2.5vmax;
+  }
+  .newsCardContainer {
+    padding: 0;
+  }
+  .btn-div {
+    width: 60vw;
+  }
+  .btn-div > button {
+    font-size: 2.5vmax;
+    padding: 2% 10% 3% 10%;
+    margin: 10% 0;
+  }
+  .btn-div > span {
+    font-size: 2vmax;
+  }
 }

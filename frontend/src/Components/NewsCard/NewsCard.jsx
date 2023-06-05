@@ -8,15 +8,15 @@ const NewsCard = ({ news }) => {
             <div className="left-div">
                 <img src={news.urlToImage === null ? dummyUrl : news.urlToImage} alt="" />
                 {/* <img src={dummyUrl} alt="" /> */}
-                <p>Source : {news.source.name}</p>
-                <p>{news.author}</p>
-                <p>{news.publishedAt}</p>
+                {news.source.name && <p> <span>Source : </span>{news.source.name}</p>}
+                {news.author && <p>{news.author}</p>}
+                {news.publishedAt && <p>{`${news.publishedAt.slice(0, 10)} , ${news.publishedAt.slice(11, 16)}`}</p>}
             </div>
             <div className="right-div">
                 <h3>{news.title}</h3>
                 <p>{news.description}</p>
-                <p>{news.content}</p>
-                <a href={news.url} target="_blank" rel="noopener noreferrer">Read More...</a>
+                {news.content && <p>{news.content.slice(1, 200)}</p>}
+                <a href={news.url} target="_blank" rel="noopener noreferrer">Read Full Coverage</a>
             </div>
         </div>
     )

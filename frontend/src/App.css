@@ -1,3 +1,25 @@
+.main-body-container {
+  width: 100%;
+  background-color: var(--color1);
+  color: var(--color3);
+}
 .main-container {
-  border: 1px solid black;
+}
+
+.navBarContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 0 3% 0 3%;
+  position: sticky;
+  left: 0;
+  top: 0;
+  background-color: var(--color2);
+}
+
+@media only screen and (max-width: 480px) {
+  .navBarContainer {
+    display: flex;
+    flex-direction: column;
+    /* height: 16vh; */
+  }
 }

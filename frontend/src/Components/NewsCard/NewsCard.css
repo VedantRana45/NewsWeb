@@ -1,7 +1,11 @@
 .main-newsCard {
   width: 90%;
   display: flex;
-  border: 1px solid red;
+  background-color: var(--color2);
+  border-radius: 1.5vmax;
+  justify-content: space-evenly;
+  padding: 3% 1%;
+  margin: 1.2% 0;
 }
 
 .left-div {
@@ -11,9 +15,91 @@
 }
 .left-div > img {
   width: 100%;
+  margin-bottom: 1%;
+}
+.left-div > p {
+  margin: 0.5% 0;
+  font-size: 1vmax;
+  color: var(--color3);
 }
 .right-div {
-  width: 60%;
+  width: 50%;
   display: flex;
   flex-direction: column;
+}
+
+.right-div > h3 {
+  font-size: 1.7vmax;
+  font-weight: 600;
+  margin-bottom: 3%;
+}
+
+.right-div > p {
+  font-size: 0.95vmax;
+  margin: 1.2% 0;
+  color: var(--color4);
+}
+
+.right-div > a {
+  text-align: center;
+  font-size: 0.95vmax;
+  padding: 0.8% 0;
+  text-decoration: none;
+  width: 90%;
+  margin: auto;
+  margin-top: 2%;
+  border-radius: 1vmax;
+  font-weight: 500;
+  color: var(--color3);
+  background-color: var(--color1);
+}
+
+@media only screen and (max-width: 480px) {
+  .main-newsCard {
+    width: 95%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4%;
+    border-radius: 2vmax;
+    margin: 3% 0;
+  }
+  .left-div {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .left-div > img {
+    border-radius: 1.5vmax;
+  }
+  .left-div > p {
+    font-size: 1.1vmax;
+    font-weight: 600;
+    background-color: var(--color1);
+    color: var(--color4);
+    padding: 1% 2%;
+    border-radius: 2vmax;
+    margin: 2% 0;
+  }
+  .left-div > p > span {
+    display: none;
+  }
+  .right-div {
+    width: 100%;
+  }
+  .right-div > h3 {
+    font-size: 2.5vmax;
+    margin: 1.5% 0;
+  }
+  .right-div > p {
+    font-size: 1.3vmax;
+  }
+
+  .right-div > a {
+    font-size: 1.5vmax;
+    width: 100%;
+    border-radius: 3vmax;
+    padding: 1.5%;
+  }
 }
