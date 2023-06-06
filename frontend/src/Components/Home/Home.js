@@ -15,13 +15,16 @@ const Home = () => {
     ];
 
     useEffect(() => {
+        setPage(1);
+    }, [query]);
+
+    useEffect(() => {
         const getNewsData = async () => {
             const newsData = await axios.get(`/api/v1/${query.mainQuery}?${query.subQuery}&page=${page}`);
             setNewsData(newsData);
         }
         getNewsData();
     }, [query, page]);
-
 
     const changePage = (value) => {
         if (page + value <= 0) {
